@@ -1,37 +1,28 @@
-import logo from './images/smallcon.png'
+
 
 import './App.css';
-
+import React from "react"
 import Main from './component/Main';
+import Navbar from './component/Navbar';
 
 
-function Navbar(){
 
-  return(
-    <nav>
-    
-     
-    <img src={logo} className="logo" alt="images/smallcon.png" />
-     <h3 className='nav-text'>ReactFacts</h3>
-   <h4 className='nav-title'>React Course - Project 1 </h4>
-    </nav>
-  )
-}
 
  
 function App() {
+  const[darkMode, setDarkMode] = React.useState(true)
+  function toggleDarkMode(){
+    setDarkMode(prevDarkMode => !prevDarkMode)
+  }
   return (
-    <div className="App">
-      
-      
-     
+    <div className="container">
       
      
-     
-     <Navbar/>
-     
-     
-     <Main/>
+     <Navbar
+     darkMode={darkMode}
+     toggleDarkMode={toggleDarkMode}
+     />
+     <Main darkMode={darkMode}/>
     </div>
   );
 }
