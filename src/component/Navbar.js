@@ -1,5 +1,5 @@
 import React from "react"
-import logo from './images/smallcon.png'
+import logo from './images/chelsealogo.png'
 
 
 export default function Navbar(props) {
@@ -8,11 +8,11 @@ export default function Navbar(props) {
           className={props.darkMode ? "dark": ""}
       >
           <img 
-          src={logo} alt="smallcon.png"
+          src={logo} alt=""
               className="nav--logo_icon"
               
           />
-          <h3 className="nav--logo_text">ReactFacts</h3>
+          <h3 className="nav--logo_text">chelsea</h3>
           
           <div 
               className="toggler" 
