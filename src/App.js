@@ -10,7 +10,7 @@ import Navbar from './component/Navbar';
 
  
 function App() {
-  const[darkMode, setDarkMode] = React.useState(true)
+  const[darkMode, setDarkMode] = React.useState(false)
   function toggleDarkMode(){
     setDarkMode(prevDarkMode => !prevDarkMode)
   }
